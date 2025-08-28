@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Sigl Financial LLC</title>
+  <meta name="description" content="Terms of Service for Sigl Financial LLC." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-ink">
+  <!-- Header -->
+  <header class="border-b border-slate-200/60 py-4">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+      <a href="index.html" class="font-semibold text-sky hover:underline">← Back to Home</a>
+      <span class="font-display font-semibold">Sigl Financial LLC</span>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 prose prose-slate">
+    <h1 class="text-3xl font-bold tracking-tight mb-6">Terms of Service</h1>
+    <p class="text-stone-700">Effective Date: <span id="effectiveDate"></span></p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By using the services of <strong>Sigl Financial LLC</strong>, you agree to these Terms of Service. If you do not agree, please do not use our services.</p>
+
+    <h2>2. Services</h2>
+    <p>We provide accounting, bookkeeping, advisory, and related financial services. Specific scope and fees are defined in client agreements.</p>
+
+    <h2>3. Use of Website</h2>
+    <p>The content on this website is for informational purposes only and should not be considered financial, tax, or legal advice. Use of this website does not create a client–CPA relationship.</p>
+
+    <h2>4. Client Responsibilities</h2>
+    <p>Clients are responsible for providing complete and accurate information in a timely manner. We are not responsible for delays or inaccuracies resulting from incomplete or incorrect information.</p>
+
+    <h2>5. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Sigl Financial LLC shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services or website.</p>
+
+    <h2>6. Confidentiality</h2>
+    <p>We will maintain the confidentiality of client information as required by law and professional standards.</p>
+
+    <h2>7. Termination</h2>
+    <p>Either party may terminate services with reasonable notice, subject to the terms of any written client agreement.</p>
+
+    <h2>8. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the State of Wisconsin.</p>
+
+    <h2>9. Updates</h2>
+    <p>We may update these Terms of Service periodically. Changes will be posted on this page with an updated effective date.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have questions about these Terms, please contact us at:</p>
+    <p><strong>Sigl Financial LLC</strong><br>
+    Email: <a href="mailto:michael@siglfinancial.com">michael@siglfinancial.com</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200/60 bg-white text-sm text-stone-70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone-70">
+      <p>© <span id="year"></span> Sigl Financial LLC. All rights reserved.</p>
+      <a href="index.html" class="hover:text-sky">Home</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("effectiveDate").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
