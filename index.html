@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your LLC — Clarity, Accounting, and Modern Systems</title>
+  <meta name="description" content="Your LLC: practical accounting and modern automation for creators and small businesses." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>🔥</text></svg>">
+  <!-- Tailwind via CDN (fast start). When we move to a build step, we'll replace this with a compiled CSS. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "sans-serif"],
+            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "sans-serif"],
+          },
+          colors: {
+            ink: "#0f172a",      // slate-900
+            mist: "#f1f5f9",     // slate-100
+            stone: "#334155",    // slate-700
+            sky: "#0ea5e9",      // sky-500 (Mike-friendly blue)
+            teal: "#14b8a6",     // teal-500 (alternative accent)
+            gold: "#f59e0b"      // amber-500 (sparingly for highlights)
+          },
+          boxShadow: {
+            soft: "0 10px 25px -10px rgba(30,41,59,.25)",
+          },
+          borderRadius: {
+            '2xl': '1rem',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Subtle fade/slide for hero on first paint */
+    .reveal { opacity: 0; transform: translateY(8px); }
+    .reveal.show { opacity: 1; transform: none; transition: all .8s cubic-bezier(.2,.8,.2,1); }
+  </style>
+</head>
+<body class="bg-white text-ink selection:bg-sky/20 selection:text-ink">
+  <!-- ====== Nav ====== -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <a href="#" class="flex items-center gap-2 font-display text-lg font-semibold tracking-tight">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-sky/10">💼</span>
+        <span id="brand">Your LLC</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#services" class="hover:text-sky">Services</a>
+        <a href="#process" class="hover:text-sky">Process</a>
+        <a href="#about" class="hover:text-sky">About</a>
+        <a href="#contact" class="hover:text-sky">Contact</a>
+        <a href="#consult" class="inline-flex items-center gap-2 rounded-2xl border border-slate-300 px-3 py-1.5 hover:border-sky/50 hover:text-sky">Book a consult</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-xl border border-slate-300" aria-label="Open menu">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 grid gap-2 text-sm">
+        <a href="#services" class="py-2">Services</a>
+        <a href="#process" class="py-2">Process</a>
+        <a href="#about" class="py-2">About</a>
+        <a href="#contact" class="py-2">Contact</a>
+        <a href="#consult" class="py-2">Book a consult</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== Hero ====== -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-mist to-white"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <h1 class="text-4xl md:text-5xl font-display font-extrabold leading-tight tracking-tight">
+            Clarity in your books.
+            <span class="block text-sky">Momentum in your business.</span>
+          </h1>
+          <p class="mt-5 text-lg text-stone/90 max-w-prose">
+            I help creators and small businesses build clean, trustworthy financial systems—combining CPA‑level rigor with modern tools and automation.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a id="consult" href="mailto:hello@yourdomain.com?subject=Consultation" class="inline-flex items-center justify-center rounded-2xl bg-sky px-5 py-3 font-medium text-white shadow-soft hover:opacity-95">Book a free consult</a>
+            <a href="#services" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 px-5 py-3 font-medium hover:border-sky/60 hover:text-sky">See services</a>
+          </div>
+          <div class="mt-8 flex items-center gap-6 text-xs text-stone/80">
+            <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> Licensed CPA</div>
+            <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> QuickBooks Online</div>
+            <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> Automation‑minded</div>
+          </div>
+        </div>
+        <div class="reveal lg:justify-self-end">
+          <div class="relative">
+            <div class="absolute -inset-6 bg-sky/10 blur-2xl rounded-3xl"></div>
+            <div class="relative rounded-3xl border border-slate-200 shadow-soft overflow-hidden">
+              <!-- Illustration / Placeholder -->
+              <svg viewBox="0 0 800 500" class="w-full h-auto bg-white">
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#0ea5e9"/>
+                    <stop offset="100%" stop-color="#14b8a6"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="800" height="500" fill="#f8fafc"/>
+                <g>
+                  <rect x="80" y="80" width="640" height="340" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+                  <rect x="110" y="120" width="180" height="16" rx="8" fill="#94a3b8"/>
+                  <rect x="110" y="150" width="260" height="12" rx="6" fill="#cbd5e1"/>
+                  <rect x="110" y="175" width="200" height="12" rx="6" fill="#e2e8f0"/>
+                  <!-- Chart bars -->
+                  <g transform="translate(110,220)">
+                    <rect width="36" height="90" x="0"   y="40"  rx="6" fill="url(#g)"/>
+                    <rect width="36" height="120" x="56"  y="10"  rx="6" fill="url(#g)"/>
+                    <rect width="36" height="70" x="112" y="60"  rx="6" fill="url(#g)"/>
+                    <rect width="36" height="150" x="168" y="-20" rx="6" fill="url(#g)"/>
+                    <rect width="36" height="100" x="224" y="30"  rx="6" fill="url(#g)"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Services ====== -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">Services</h2>
+        <p class="mt-3 text-stone/90">Simple, transparent, and tailored. Start lean; scale clean.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition">
+          <h3 class="font-semibold text-lg">Monthly Bookkeeping</h3>
+          <p class="mt-2 text-sm text-stone/80">Clean, reconciled books in QuickBooks Online. P&L and cash‑flow you can trust.</p>
+          <ul class="mt-4 space-y-2 text-sm text-stone/80">
+            <li>• Bank/Credit Card Reconciliations</li>
+            <li>• Categorization & Rules</li>
+            <li>• Monthly Financials</li>
+          </ul>
+        </article>
+        <!-- Card 2 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition">
+          <h3 class="font-semibold text-lg">Systems Setup</h3>
+          <p class="mt-2 text-sm text-stone/80">Launch-ready QBO, chart of accounts, receipt capture, and light automations.</p>
+          <ul class="mt-4 space-y-2 text-sm text-stone/80">
+            <li>• QBO Setup & Cleanup</li>
+            <li>• Chart of Accounts Design</li>
+            <li>• App Integrations</li>
+          </ul>
+        </article>
+        <!-- Card 3 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition">
+          <h3 class="font-semibold text-lg">Advisory & Clarity</h3>
+          <p class="mt-2 text-sm text-stone/80">Straight answers, actionable next steps, and a cadence that fits your business.</p>
+          <ul class="mt-4 space-y-2 text-sm text-stone/80">
+            <li>• KPI & Cash Insights</li>
+            <li>• Close & Workflow Design</li>
+            <li>• Quarterly Reviews</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Process ====== -->
+  <section id="process" class="py-20 bg-mist">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">The process</h2>
+        <p class="mt-3 text-stone/90">Four steps. No fluff. Built for momentum.</p>
+      </div>
+      <ol class="mt-10 grid md:grid-cols-4 gap-6">
+        <li class="rounded-2xl bg-white border border-slate-200 p-6">
+          <div class="text-sky font-bold">01</div>
+          <h3 class="mt-2 font-semibold">Fit call</h3>
+          <p class="mt-2 text-sm text-stone/80">15–20 minutes to align on goals, scope, and timeline.</p>
+        </li>
+        <li class="rounded-2xl bg-white border border-slate-200 p-6">
+          <div class="text-sky font-bold">02</div>
+          <h3 class="mt-2 font-semibold">Setup & cleanup</h3>
+          <p class="mt-2 text-sm text-stone/80">Chart, rules, bank feeds, and tidy historicals if needed.</p>
+        </li>
+        <li class="rounded-2xl bg-white border border-slate-200 p-6">
+          <div class="text-sky font-bold">03</div>
+          <h3 class="mt-2 font-semibold">Operate</h3>
+          <p class="mt-2 text-sm text-stone/80">Monthly close rhythm, reconciliations, and simple reports.</p>
+        </li>
+        <li class="rounded-2xl bg-white border border-slate-200 p-6">
+          <div class="text-sky font-bold">04</div>
+          <h3 class="mt-2 font-semibold">Advise</h3>
+          <p class="mt-2 text-sm text-stone/80">Quarterly reviews, cash insights, and right‑sized next steps.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ====== About ====== -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-3 gap-10 items-start">
+      <div class="lg:col-span-2">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">About</h2>
+        <p class="mt-4 text-stone/90 max-w-prose">
+          I'm Michael, a CPA and systems‑minded builder. After years in corporate accounting, I founded <span class="font-semibold">Your LLC</span> to bring clarity and momentum to the books that matter most. I keep things simple, pragmatic, and honest. We build what you actually need—and nothing you don't.
+        </p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-stone/80">
+          <li class="flex items-center gap-2">✅ Licensed CPA (WI)</li>
+          <li class="flex items-center gap-2">✅ QuickBooks Online</li>
+          <li class="flex items-center gap-2">✅ Cadency / Workday / Oracle</li>
+          <li class="flex items-center gap-2">✅ Excel wizardry</li>
+        </ul>
+      </div>
+      <aside class="bg-mist border border-slate-200 rounded-2xl p-6">
+        <h3 class="font-semibold">Credentials & Signals</h3>
+        <p class="mt-2 text-sm text-stone/80">Logos here as you add them:</p>
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <span class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-3 py-1.5 text-xs">CPA</span>
+          <span class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-3 py-1.5 text-xs">QuickBooks ProAdvisor</span>
+          <span class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-3 py-1.5 text-xs">Workday</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ====== Contact ====== -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">Get in touch</h2>
+        <p class="mt-3 text-stone/90">Tell me what you're building. I'll reply within one business day.</p>
+      </div>
+      <!-- Option A: Formspree (drop-in). Replace the action URL with your Formspree endpoint. -->
+      <form action="#" method="POST" class="mt-8 grid gap-4 max-w-xl">
+        <input name="name" required placeholder="Your name" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky/50" />
+        <input name="email" type="email" required placeholder="Email" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky/50" />
+        <textarea name="message" required placeholder="How can I help?" rows="5" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky/50"></textarea>
+        <button class="inline-flex items-center justify-center rounded-2xl bg-sky px-5 py-3 font-medium text-white shadow-soft hover:opacity-95">Send message</button>
+        <p class="text-xs text-stone/70">By contacting me you agree to a polite, human conversation. No spam. No automated reselling.</p>
+      </form>
+      <p class="mt-6 text-sm text-stone/80">Prefer email? <a class="text-sky underline" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-slate-200/60 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone/70">
+      <p>© <span id="year"></span> Your LLC. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-sky">LinkedIn</a>
+        <a href="#" class="hover:text-sky">Email</a>
+        <a href="#" class="hover:text-sky">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    // Simple reveal
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('show'));
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
