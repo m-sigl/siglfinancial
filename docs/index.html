@@ -6,6 +6,25 @@
   <title>Sigl Financial LLC — Clarity, Accounting, and Modern Systems</title>
   <meta name="description" content="Sigl Financial LLC: practical accounting and modern automation for creators and small businesses." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>🔥</text></svg>">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://siglfinancial.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://siglfinancial.com/">
+  <meta property="og:title" content="Sigl Financial LLC — Clarity in your books. Momentum in your business.">
+  <meta property="og:description" content="Practical accounting and modern automation for creators and small businesses.">
+  <!-- Replace with a real image when ready -->
+  <meta property="og:image" content="https://siglfinancial.com/assets/og-card.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sigl Financial LLC">
+  <meta name="twitter:description" content="Practical accounting + modern automation.">
+  <!-- Replace with a real image when ready -->
+  <meta name="twitter:image" content="https://siglfinancial.com/assets/og-card.png">
+
   <!-- Tailwind via CDN (fast start). When we move to a build step, we'll replace this with a compiled CSS. -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -20,9 +39,9 @@
             ink: "#0f172a",      // slate-900
             mist: "#f1f5f9",     // slate-100
             stone: "#334155",    // slate-700
-            sky: "#0ea5e9",      // sky-500 (Mike-friendly blue)
-            teal: "#14b8a6",     // teal-500 (alternative accent)
-            gold: "#f59e0b"      // amber-500 (sparingly for highlights)
+            sky: "#0ea5e9",      // sky-500
+            teal: "#14b8a6",     // teal-500
+            gold: "#f59e0b"      // amber-500
           },
           boxShadow: {
             soft: "0 10px 25px -10px rgba(30,41,59,.25)",
@@ -35,6 +54,10 @@
     }
   </script>
   <style>
+    /* Smooth scroll + anchor offset so sticky header doesn't cover section titles */
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 90px; } /* header ~64px + breathing room */
+
     /* Subtle fade/slide for hero on first paint */
     .reveal { opacity: 0; transform: translateY(8px); }
     .reveal.show { opacity: 1; transform: none; transition: all .8s cubic-bezier(.2,.8,.2,1); }
@@ -80,7 +103,7 @@
             <span class="block text-sky">Momentum in your business.</span>
           </h1>
           <p class="mt-5 text-lg text-stone/90 max-w-prose">
-            I help creators and small businesses build clean, trustworthy financial systems—combining CPA‑level rigor with modern tools and automation.
+            I help creators and small businesses build clean, trustworthy financial systems—combining CPA-level rigor with modern tools and automation.
           </p>
           <div class="mt-8 flex flex-wrap items-center gap-3">
             <a id="consult" href="mailto:michael@siglfinancial.com?subject=Consultation" class="inline-flex items-center justify-center rounded-2xl bg-sky px-5 py-3 font-medium text-white shadow-soft hover:opacity-95">Book a free consult</a>
@@ -89,7 +112,7 @@
           <div class="mt-8 flex items-center gap-6 text-xs text-stone/80">
             <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> Licensed CPA</div>
             <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> QuickBooks Online</div>
-            <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> Automation‑minded</div>
+            <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> Automation-minded</div>
           </div>
         </div>
         <div class="reveal lg:justify-self-end">
@@ -138,7 +161,7 @@
         <!-- Card 1 -->
         <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition">
           <h3 class="font-semibold text-lg">Monthly Bookkeeping</h3>
-          <p class="mt-2 text-sm text-stone/80">Clean, reconciled books in QuickBooks Online. P&L and cash‑flow you can trust.</p>
+          <p class="mt-2 text-sm text-stone/80">Clean, reconciled books in QuickBooks Online. P&L and cash-flow you can trust.</p>
           <ul class="mt-4 space-y-2 text-sm text-stone/80">
             <li>• Bank/Credit Card Reconciliations</li>
             <li>• Categorization & Rules</li>
@@ -195,7 +218,7 @@
         <li class="rounded-2xl bg-white border border-slate-200 p-6">
           <div class="text-sky font-bold">04</div>
           <h3 class="mt-2 font-semibold">Advise</h3>
-          <p class="mt-2 text-sm text-stone/80">Quarterly reviews, cash insights, and right‑sized next steps.</p>
+          <p class="mt-2 text-sm text-stone/80">Quarterly reviews, cash insights, and right-sized next steps.</p>
         </li>
       </ol>
     </div>
@@ -207,7 +230,7 @@
       <div class="lg:col-span-2">
         <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">About</h2>
         <p class="mt-4 text-stone/90 max-w-prose">
-          I'm Michael, a CPA and systems‑minded builder. After years in corporate accounting, I founded <span class="font-semibold">Sigl Financial LLC</span> to bring clarity and momentum to the books that matter most. I keep things simple, pragmatic, and honest. We build what you actually need—and nothing you don't.
+          I'm Michael, a CPA and systems-minded builder. After years in corporate accounting, I founded <span class="font-semibold">Sigl Financial LLC</span> to bring clarity and momentum to the books that matter most. I keep things simple, pragmatic, and honest. We build what you actually need—and nothing you don't.
         </p>
         <ul class="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-stone/80">
           <li class="flex items-center gap-2">✅ Licensed CPA (PA)</li>
@@ -248,29 +271,28 @@
   </section>
 
   <footer class="py-10 border-t border-slate-200/60 bg-white">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone/70">
-    <p>© <span id="year"></span> Sigl Financial LLC. All rights reserved.</p>
-    <div class="flex items-center gap-4">
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/michael-siglschmidt-cpa" target="_blank" rel="noopener noreferrer" class="hover:text-sky">
-        LinkedIn
-      </a>
-      <!-- Email -->
-      <a href="mailto:michael@siglfinancial.com" class="hover:text-sky">
-        Email
-      </a>
-      <!-- Privacy page -->
-      <a href="privacy.html" class="hover:text-sky">
-        Privacy
-      </a>
-      <!-- Terms page -->
-      <a href="terms.html" class="hover:text-sky">
-        Terms
-      </a>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone/70">
+      <p>© <span id="year"></span> Sigl Financial LLC. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/michael-siglschmidt-cpa" target="_blank" rel="noopener noreferrer" class="hover:text-sky">
+          LinkedIn
+        </a>
+        <!-- Email -->
+        <a href="mailto:michael@siglfinancial.com" class="hover:text-sky">
+          Email
+        </a>
+        <!-- Privacy page -->
+        <a href="privacy.html" class="hover:text-sky">
+          Privacy
+        </a>
+        <!-- Terms page -->
+        <a href="terms.html" class="hover:text-sky">
+          Terms
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
     // Mobile menu toggle
@@ -283,6 +305,24 @@
       document.querySelectorAll('.reveal').forEach(el => el.classList.add('show'));
       document.getElementById('year').textContent = new Date().getFullYear();
     });
+
+    // Active nav highlight while scrolling
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = [...document.querySelectorAll('header nav a[href^="#"]')];
+    const byId = id => navLinks.find(a => a.getAttribute('href') === `#${id}`);
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const link = byId(e.target.id);
+        if (!link) return;
+        if (e.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('text-sky', 'font-semibold'));
+          link.classList.add('text-sky','font-semibold');
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px', threshold: 0.01 });
+
+    sections.forEach(s => obs.observe(s));
   </script>
 </body>
 </html>
