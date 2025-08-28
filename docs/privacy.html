@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Sigl Financial LLC</title>
+  <meta name="description" content="Privacy Policy for Sigl Financial LLC: how we handle and protect your information." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-ink">
+  <!-- Header -->
+  <header class="border-b border-slate-200/60 py-4">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+      <a href="index.html" class="font-semibold text-sky hover:underline">← Back to Home</a>
+      <span class="font-display font-semibold">Sigl Financial LLC</span>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 prose prose-slate">
+    <h1 class="text-3xl font-bold tracking-tight mb-6">Privacy Policy</h1>
+    <p class="text-stone-700">Effective Date: <span id="effectiveDate"></span></p>
+
+    <h2>1. Introduction</h2>
+    <p>At <strong>Sigl Financial LLC</strong>, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your information.</p>
+
+    <h2>2. Information We Collect</h2>
+    <ul>
+      <li><strong>Personal Information:</strong> Name, email address, and details you provide when contacting us.</li>
+      <li><strong>Business Information:</strong> Any financial or organizational data shared for consultation or bookkeeping purposes.</li>
+      <li><strong>Technical Information:</strong> Basic analytics such as browser type or pages visited, collected through standard web tools.</li>
+    </ul>
+
+    <h2>3. How We Use Information</h2>
+    <p>We use your information only to:</p>
+    <ul>
+      <li>Respond to your inquiries and provide services.</li>
+      <li>Maintain accurate business records.</li>
+      <li>Improve our website and communications.</li>
+    </ul>
+
+    <h2>4. Sharing of Information</h2>
+    <p>We do not sell, rent, or trade your personal information. We may share data only with trusted service providers (such as email or cloud software tools) strictly to deliver our services.</p>
+
+    <h2>5. Data Security</h2>
+    <p>We use reasonable administrative, technical, and physical safeguards to protect your data. However, no method of transmission or storage is 100% secure.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>You have the right to access, update, or delete your personal information by contacting us at <a href="mailto:michael@siglfinancial.com">michael@siglfinancial.com</a>.</p>
+
+    <h2>7. Updates to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+
+    <h2>8. Contact</h2>
+    <p>If you have questions about this Privacy Policy, please contact us at:</p>
+    <p><strong>Sigl Financial LLC</strong><br>
+    Email: <a href="mailto:michael@siglfinancial.com">michael@siglfinancial.com</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200/60 bg-white text-sm text-stone-70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone-70">
+      <p>© <span id="year"></span> Sigl Financial LLC. All rights reserved.</p>
+      <a href="index.html" class="hover:text-sky">Home</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("effectiveDate").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
