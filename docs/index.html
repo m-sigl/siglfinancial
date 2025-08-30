@@ -250,13 +250,13 @@
       <aside class="bg-mist border border-slate-200 rounded-2xl p-6">
         <h3 class="font-semibold">Credentials & Signals</h3>
       
-        <!-- Responsive grid; roomy cards; prevents squish -->
-        <div class="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Big, simple, 2-up grid (stacks on mobile) -->
+        <div class="mt-4 grid gap-6 grid-cols-1 sm:grid-cols-2 justify-items-center">
       
-          <!-- CPA Badge (bigger shield, number slightly smaller to avoid clipping) -->
+          <!-- CPA badge (large) -->
           <a href="https://www.pals.pa.gov/#/public" target="_blank" rel="noopener noreferrer"
-             class="flex justify-center items-center rounded-xl border border-slate-300 p-6 hover:bg-slate-50 transition min-h-[180px]">
-            <svg width="120" height="138" viewBox="0 0 56 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="block">
+             class="flex items-center justify-center rounded-xl border border-slate-300 p-6 hover:bg-slate-50 transition min-w-[260px] min-h-[260px]">
+            <svg viewBox="0 0 56 64" xmlns="http://www.w3.org/2000/svg" class="w-[160px] h-auto">
               <defs>
                 <linearGradient id="cpashield" x1="0" x2="0" y1="0" y2="1">
                   <stop offset="0" stop-color="#0f172a"/>
@@ -269,33 +269,29 @@
               <!-- Top bar -->
               <path d="M6 10.5c6.9-.7 13.8-2.5 22-6.5 8.2 4 15.1 5.8 22 6.5v8.5H6v-8.5Z" fill="url(#cpashield)"/>
               <!-- Mid band -->
-              <rect x="6" y="21" width="44" height="12" rx="2" fill="#e2e8f0" />
+              <rect x="6" y="21" width="44" height="12" rx="2" fill="#e2e8f0"/>
               <!-- Bottom ribbon -->
               <rect x="6" y="36" width="44" height="10" rx="2" fill="#16a34a"/>
-              <!-- Text (slightly larger overall; license number slightly smaller to avoid edge clipping) -->
-              <text x="28" y="18" text-anchor="middle" font-size="10" font-family="Inter, system-ui, Arial" fill="#fff" font-weight="700">CPA</text>
-              <text x="28" y="29" text-anchor="middle" font-size="9" font-family="Inter, system-ui, Arial" fill="#0f172a" font-weight="600">Pennsylvania</text>
-              <text x="28" y="43" text-anchor="middle" font-size="9" font-family="Inter, system-ui, Arial" fill="#fff" font-weight="700">License</text>
-              <text x="28" y="52" text-anchor="middle" font-size="8" font-family="Inter, system-ui, Arial" fill="#0f172a" font-weight="700">CA063575</text>
+      
+              <!-- Text (scaled so the number fits cleanly) -->
+              <text x="28" y="18" text-anchor="middle" font-size="11" font-family="Inter, system-ui, Arial" fill="#fff" font-weight="700">CPA</text>
+              <text x="28" y="29" text-anchor="middle" font-size="9.5" font-family="Inter, system-ui, Arial" fill="#0f172a" font-weight="600">Pennsylvania</text>
+              <text x="28" y="43" text-anchor="middle" font-size="9.5" font-family="Inter, system-ui, Arial" fill="#fff" font-weight="700">License</text>
+              <text x="28" y="53" text-anchor="middle" font-size="8" font-family="Inter, system-ui, Arial" fill="#0f172a" font-weight="700" letter-spacing=".2">CA063575</text>
             </svg>
           </a>
       
-          <!-- Intuit Bookkeeping Badge (bigger image) -->
+          <!-- Intuit Bookkeeping badge (large) -->
           <a href="https://www.credly.com/badges/b3ea2830-9960-454b-b57b-a1642b754c82/public_url" target="_blank" rel="noopener noreferrer"
-             class="flex justify-center items-center rounded-xl border border-slate-300 p-6 hover:bg-slate-50 transition min-h-[180px]">
+             class="flex items-center justify-center rounded-xl border border-slate-300 p-6 hover:bg-slate-50 transition min-w-[260px] min-h-[260px]">
             <img src="/assets/images/intuit-bookkeeping-certification.png"
-                 alt="Intuit Bookkeeping Certification" width="180" height="180" class="rounded-lg block">
+                 alt="Intuit Bookkeeping Certification"
+                 class="w-[160px] h-auto rounded-lg">
           </a>
-      
-          <!-- Placeholder for future badges -->
-          <div class="flex justify-center items-center rounded-xl border border-dashed border-slate-300 p-6 text-slate-400 min-h-[180px]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V5a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0V9h2a1 1 0 100-2h-2z" clip-rule="evenodd" />
-            </svg>
-          </div>
       
         </div>
       </aside>
+
 
 
 
