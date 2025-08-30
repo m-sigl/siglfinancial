@@ -249,25 +249,66 @@
       </div>
       <aside class="bg-mist border border-slate-200 rounded-2xl p-6">
         <h3 class="font-semibold">Credentials & Signals</h3>
-        <div class="mt-4 flex flex-wrap items-center gap-3">
+        <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       
-          <!-- CPA Badge (Checkmark Version) -->
-          <span class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-3 py-1.5 text-xs bg-sky/10 text-sky font-semibold">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-sky" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          <!-- CPA Badge (Shield + clickable verification) -->
+          <a href="https://www.pals.pa.gov/#/public" target="_blank" rel="noopener noreferrer"
+             class="flex items-center gap-3 rounded-xl border border-slate-300 p-3 text-xs hover:bg-slate-50 transition">
+            <!-- Shield SVG -->
+            <svg width="56" height="64" viewBox="0 0 56 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+              <defs>
+                <linearGradient id="cpashield" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#0f172a"/>
+                  <stop offset="1" stop-color="#1e293b"/>
+                </linearGradient>
+              </defs>
+              <!-- Outer shield -->
+              <path d="M28 2c7.6 4.1 15.3 6.2 24 7.2v22.4c0 13-8.7 22.4-24 30.4C12.7 54 4 44.6 4 31.6V9.2C12.7 8.2 20.4 6.1 28 2Z"
+                    fill="white" stroke="#0f172a" stroke-width="2"/>
+              <!-- Top bar -->
+              <path d="M6 10.5c6.9-.7 13.8-2.5 22-6.5 8.2 4 15.1 5.8 22 6.5v8.5H6v-8.5Z" fill="url(#cpashield)"/>
+              <!-- Mid band -->
+              <rect x="6" y="21" width="44" height="12" rx="2" fill="#e2e8f0" />
+              <!-- Bottom ribbon -->
+              <rect x="6" y="36" width="44" height="10" rx="2" fill="#16a34a"/>
+              <!-- Text -->
+              <text x="28" y="18" text-anchor="middle" font-size="9" font-family="Inter, system-ui, Arial" fill="#fff" font-weight="700">CPA</text>
+              <text x="28" y="29" text-anchor="middle" font-size="8" font-family="Inter, system-ui, Arial" fill="#0f172a" font-weight="600">Pennsylvania</text>
+              <text x="28" y="43" text-anchor="middle" font-size="8" font-family="Inter, system-ui, Arial" fill="#fff" font-weight="700">License</text>
+              <text x="28" y="52" text-anchor="middle" font-size="9" font-family="Inter, system-ui, Arial" fill="#0f172a" font-weight="700">CA063575</text>
             </svg>
-            CPA
-          </span>
-          
+      
+            <div class="leading-tight">
+              <span class="block font-semibold text-slate-800">Licensed CPA (PA)</span>
+              <span class="block text-slate-500">License # CA063575 — Click to verify</span>
+            </div>
+          </a>
+      
           <!-- Intuit Bookkeeping Badge (clickable + local image) -->
           <a href="https://www.credly.com/badges/b3ea2830-9960-454b-b57b-a1642b754c82/public_url" target="_blank" rel="noopener noreferrer"
-             class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-3 py-1.5 text-xs">
-            <img src="/assets/images/intuit-bookkeeping-certification.png" alt="Intuit Bookkeeping Certification" width="180" height="180" class="rounded-lg">
-            Intuit Certified Bookkeeper
+             class="flex items-center gap-3 rounded-xl border border-slate-300 p-3 text-xs hover:bg-slate-50 transition">
+            <img src="/assets/images/intuit-bookkeeping-certification.png" alt="Intuit Bookkeeping Certification"
+                 width="64" height="64" class="rounded-lg shrink-0">
+            <div class="leading-tight">
+              <span class="block font-semibold text-slate-800">Intuit Certified Bookkeeper</span>
+              <span class="block text-slate-500">Issued Aug 2025 — Click to verify</span>
+            </div>
           </a>
+      
+          <!-- Future Badge Placeholder -->
+          <div class="flex items-center gap-3 rounded-xl border border-dashed border-slate-300 p-3 text-xs text-slate-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V5a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0V9h2a1 1 0 100-2h-2z" clip-rule="evenodd" />
+            </svg>
+            <div class="leading-tight">
+              <span class="block font-semibold">More coming soon…</span>
+              <span class="block">QuickBooks Level 1, Level 2, Payroll</span>
+            </div>
+          </div>
       
         </div>
       </aside>
+
     </div>
   </section>
 
