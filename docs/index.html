@@ -132,14 +132,9 @@
             <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-teal"></span> Builder-friendly reporting</div>
           </div>
 
-          <!-- Who we serve strip -->
-          <div class="mt-8 flex flex-wrap items-center gap-2">
-            <span class="text-xs uppercase tracking-wide text-stone/70 mr-2">Who we serve:</span>
-            <span class="text-xs px-2.5 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">Contractors</span>
-            <span class="text-xs px-2.5 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">Roofers</span>
-            <span class="text-xs px-2.5 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">Electricians</span>
-            <span class="text-xs px-2.5 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">Landscapers</span>
-            <span class="text-xs px-2.5 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">Remodelers</span>
+          <!-- Who we serve (rendered by JS) -->
+          <div class="mt-8 flex flex-wrap items-center gap-2" id="serveWrap" aria-label="Who we serve">
+            <!-- JS injects label + chips here -->
           </div>
         </div>
 
@@ -405,10 +400,30 @@
     const menu = document.getElementById('mobileMenu');
     btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
 
-    // Simple reveal
+    // Render "Who we serve" chips from one source of truth
+    const WHO_WE_SERVE = ["Contractors","Roofers","Electricians","Landscapers","Remodelers"]; // <-- edit here
+    function renderWhoWeServe() {
+      const wrap = document.getElementById('serveWrap');
+      if (!wrap) return;
+      // label
+      const label = document.createElement('span');
+      label.className = "text-xs uppercase tracking-wide text-stone/70 mr-2";
+      label.textContent = "Who we serve:";
+      wrap.appendChild(label);
+      // chips
+      WHO_WE_SERVE.forEach(name => {
+        const chip = document.createElement('span');
+        chip.className = "text-xs px-2.5 py-1 rounded-full bg-sky/10 text-sky border border-sky/20";
+        chip.textContent = name;
+        wrap.appendChild(chip);
+      });
+    }
+
+    // Reveal + year + nav highlight
     window.addEventListener('load', () => {
       document.querySelectorAll('.reveal').forEach(el => el.classList.add('show'));
       document.getElementById('year').textContent = new Date().getFullYear();
+      renderWhoWeServe();
     });
 
     // Active nav highlight while scrolling
