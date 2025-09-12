@@ -183,7 +183,10 @@
       <!-- grid: 2x2 on mobile, 4-wide on md+ -->
       <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
         <!-- Card 1 -->
-        <article class="rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+        <article class="relative rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+          <span class="absolute top-3 right-3 text-xs font-semibold px-2 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">
+            $300–$600/mo
+          </span>
           <div class="h-8 w-8 rounded-lg bg-sky/10 flex items-center justify-center" aria-hidden="true">
             <!-- ledger icon -->
             <svg viewBox="0 0 24 24" class="h-5 w-5 text-sky" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -200,7 +203,10 @@
           </ul>
         </article>
         <!-- Card 2 -->
-        <article class="rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+        <article class="relative rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+          <span class="absolute top-3 right-3 text-xs font-semibold px-2 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">
+            Add-on $150–$500/mo
+          </span>
           <div class="h-8 w-8 rounded-lg bg-sky/10 flex items-center justify-center" aria-hidden="true">
             <!-- payroll icon -->
             <svg viewBox="0 0 24 24" class="h-5 w-5 text-sky" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -217,7 +223,10 @@
           </ul>
         </article>
         <!-- Card 3 -->
-        <article class="rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+        <article class="relative rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+          <span class="absolute top-3 right-3 text-xs font-semibold px-2 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">
+            Project $750–$2,000+
+          </span>
           <div class="h-8 w-8 rounded-lg bg-sky/10 flex items-center justify-center" aria-hidden="true">
             <!-- costing icon -->
             <svg viewBox="0 0 24 24" class="h-5 w-5 text-sky" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -236,7 +245,10 @@
           </ul>
         </article>
         <!-- Card 4 -->
-        <article class="rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+        <article class="relative rounded-2xl border border-slate-200 p-4 sm:p-6 hover:shadow-soft transition">
+          <span class="absolute top-3 right-3 text-xs font-semibold px-2 py-1 rounded-full bg-sky/10 text-sky border border-sky/20">
+            Custom
+          </span>
           <div class="h-8 w-8 rounded-lg bg-sky/10 flex items-center justify-center" aria-hidden="true">
             <!-- CFO icon -->
             <svg viewBox="0 0 24 24" class="h-5 w-5 text-sky" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -256,6 +268,45 @@
       </div>
     </div>
   </section>
+  
+  <!-- ====== Pricing ====== -->
+  <section id="pricing" class="py-20 bg-mist">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">Pricing</h2>
+        <p class="mt-3 text-stone/90">Straightforward ranges. Final quotes after a quick discovery call—no surprises.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Monthly Bookkeeping</h3>
+          <p class="text-stone/80 mt-2">Typical range: <span class="font-semibold">$300–$600/month</span></p>
+          <p class="text-sm text-stone/70 mt-1">Depends on volume of transactions, number of accounts, and reporting needs.</p>
+        </div>
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Payroll Add-On</h3>
+          <p class="text-stone/80 mt-2">Typical range: <span class="font-semibold">$150–$500/month</span></p>
+          <p class="text-sm text-stone/70 mt-1">Varies by employee count, pay frequency, and contractor mix.</p>
+        </div>
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Job Costing & Cash Flow</h3>
+          <p class="text-stone/80 mt-2">Project-based: <span class="font-semibold">$750–$2,000+</span></p>
+          <p class="text-sm text-stone/70 mt-1">One-time setup or cleanup; ongoing support quoted separately.</p>
+        </div>
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Fractional CFO</h3>
+          <p class="text-stone/80 mt-2"><span class="font-semibold">Custom engagement</span></p>
+          <p class="text-sm text-stone/70 mt-1">Scoped to your growth stage, project complexity, and cadence of advisory.</p>
+        </div>
+      </div>
+      <div class="mt-8">
+        <a href="mailto:michael@siglfinancial.com?subject=Consultation" 
+           class="inline-flex items-center justify-center rounded-2xl bg-sky px-5 py-3 font-medium text-white shadow-soft hover:opacity-95">
+          Book a free consult
+        </a>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ====== Process ====== -->
   <section id="process" class="py-20 bg-mist">
