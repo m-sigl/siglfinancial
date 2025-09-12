@@ -480,23 +480,28 @@
       renderWhoWeServe();
     });
 
-    // Active nav highlight while scrolling
+    // Active nav highlight while scrolling (now includes Pricing)
     const sections = document.querySelectorAll('section[id]');
     const navLinks = [...document.querySelectorAll('header nav a[href^="#"]')];
     const byId = id => navLinks.find(a => a.getAttribute('href') === `#${id}`);
-
+    
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         const link = byId(e.target.id);
         if (!link) return;
         if (e.isIntersecting) {
           navLinks.forEach(a => a.classList.remove('text-sky', 'font-semibold'));
-          link.classList.add('text-sky','font-semibold');
+          link.classList.add('text-sky', 'font-semibold');
         }
       });
-    }, { rootMargin: '-40% 0px -50% 0px', threshold: 0.01 });
-
+    }, { 
+      rootMargin: '-40% 0px -50% 0px', 
+      threshold: 0.01 
+    });
+    
+    // Observe all sections (including new #pricing section)
     sections.forEach(s => obs.observe(s));
+
   </script>
 </body>
 </html>
